@@ -1,59 +1,70 @@
 package com.betplay.entitly;
 
-import java.util.Date;
+import java.sql.Date;
 
-public class Lesion {
+public class Patrocinador {
     private int id;
-    private Jugador jugador;
+    private String nombre;
     private String tipo;
-    private String gravedad;
+    private double monto;
     private Date fechaInicio;
     private Date fechaFin;
-    public Lesion() {
-    }
-    public Lesion(int id, Jugador jugador, String tipo, String gravedad, Date fechaInicio, Date fechaFin) {
+
+    public Patrocinador(int id, String nombre, String tipo, double monto, Date fechaInicio, Date fechaFin) {
         this.id = id;
-        this.jugador = jugador;
+        this.nombre = nombre;
         this.tipo = tipo;
-        this.gravedad = gravedad;
+        this.monto = monto;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
     }
+
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
-    public Jugador getJugador() {
-        return jugador;
+
+    public String getNombre() {
+        return nombre;
     }
-    public void setJugador(Jugador jugador) {
-        this.jugador = jugador;
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
+
     public String getTipo() {
         return tipo;
     }
+
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-    public String getGravedad() {
-        return gravedad;
+
+    public double getMonto() {
+        return monto;
     }
-    public void setGravedad(String gravedad) {
-        this.gravedad = gravedad;
+
+    public void setMonto(double monto) {
+        this.monto = monto;
     }
+
     public Date getFechaInicio() {
         return fechaInicio;
     }
+
     public void setFechaInicio(Date fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
+
     public Date getFechaFin() {
         return fechaFin;
     }
+
     public void setFechaFin(Date fechaFin) {
         this.fechaFin = fechaFin;
     }
-
+    
 }

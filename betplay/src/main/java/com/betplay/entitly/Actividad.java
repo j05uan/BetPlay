@@ -3,16 +3,6 @@ package com.betplay.entitly;
 import java.util.Date;
 import java.util.List;
 
-public class Entrenamiento {
-    private int id;
-    private Equipo equipo;
-    private Date fecha;
-    private String hora;
-    private String lugar;
-    private List<Jugador> jugadoresConvocados;
-    private List<Actividad> actividades;
-    
-}
 
 public class Actividad {
     private int id;
@@ -24,4 +14,29 @@ public class Actividad {
         this.descripcion = descripcion;
         this.duracion = duracion;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public int getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(int duracion) {
+        this.duracion = duracion;
+    }
+    
 }

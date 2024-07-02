@@ -10,25 +10,30 @@ public class Permiso {
         this.id = id;
         this.descripcion = descripcion;
     }
-}
 
-
-
-public class Patrocinador {
-    private int id;
-    private String nombre;
-    private String tipo;
-    private double monto;
-    private Date fechaInicio;
-    private Date fechaFin;
-
-    public Patrocinador(int id, String nombre, String tipo, double monto, Date fechaInicio, Date fechaFin) {
-        this.id = id;
-        this.nombre = nombre;
-        this.tipo = tipo;
-        this.monto = monto;
-        this.fechaInicio = fechaInicio;
-        this.fechaFin = fechaFin;
+    public Permiso() {
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    
+    
 }
+
+
+
     

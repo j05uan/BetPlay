@@ -8,19 +8,45 @@ public class Usuario {
     private String email;
     private String contraseña;
     private Rol rol;
-
-}
-
-public class Rol {
-    private int id;
-    private String nombre;
-    private List<Permiso> permisos;
-
-    public Rol(int id, String nombre, List<Permiso> permisos) {
+    public Usuario() {
+    }
+    public Usuario(int id, String nombre, String email, String contraseña, Rol rol) {
         this.id = id;
         this.nombre = nombre;
-        this.permisos = permisos;
+        this.email = email;
+        this.contraseña = contraseña;
+        this.rol = rol;
+    }
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getContraseña() {
+        return contraseña;
+    }
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
+    }
+    public Rol getRol() {
+        return rol;
+    }
+    public void setRol(Rol rol) {
+        this.rol = rol;
     }
 
-
 }
+
